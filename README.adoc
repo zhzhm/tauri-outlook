@@ -1,0 +1,17 @@
+# Outlook-Tauri -- 打开Outlook页面的替代方案
+
+## 来由
+
+如果公司使用了 partner.outlook.cn 提供邮件服务，并且启用了短信的二次验证登录，在Linux无论使用ThunderBird还是Evolution均无法正常登录并下载邮件。而只能使用浏览器操作邮件。
+
+但是浏览器会经常被误关（作为一个前端开发，也可能被搞死。）。所以使用tauri包装一下，以实现在Linux下做为一个独立的App运行。
+
+## 编译
+
+1. 请参考 https://tauri.app/v1/guides/getting-started/setup/[Tauri官网] 配置Tauri编译环境。
+2. 执行 yarn tauri build 编译
+3. 到 src-tauri/target/release下获取可执行程序。
+4. 运行即可。
+
+
+
